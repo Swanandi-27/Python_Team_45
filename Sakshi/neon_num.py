@@ -4,7 +4,7 @@ square = num * num
 sum = 0
 
 while square > 0:
-    digit = square % 10
+    digit = square % 1
     sum = sum + digit
     square = square // 10
 
