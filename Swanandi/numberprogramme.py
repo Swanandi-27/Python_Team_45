@@ -31,7 +31,20 @@ match choice:
             print(num, "is not an Armstrong number")
 
     case 3:
-        pass
+        num = int(input("Enter a number: "))
+
+        square = num * num
+        sum = 0
+        
+        while square > 0:
+            digit = square % 10
+            sum = sum + digit
+            square = square // 10
+        
+        if sum == num:
+            print("Neon Number")
+        else:
+            print("Not a Neon Number")
     case 4:
         exit()
     case _:
